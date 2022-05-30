@@ -12,7 +12,7 @@ theFooter.addEventListener('click', onFooterClick);
 
 
 
-//Fonctionnalité 2:
+//Fonctionnalité 2-bis:
 let hamburgerMenuButton = document.getElementsByClassName("navbar-toggler")[0];
 let theNavbarHeader = document.getElementById("navbarHeader");
 
@@ -21,6 +21,11 @@ let onHamburgerMenuButtonClick = function() {
 };
 
 hamburgerMenuButton.addEventListener('click', onHamburgerMenuButtonClick);
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+//Fonctionnalité 3:
 
 
 
