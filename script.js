@@ -13,9 +13,14 @@ theFooter.addEventListener('click', onFooterClick);
 
 
 //Fonctionnalité 2:
-let theNavbarHeader = document.getElementById("navbarHeader")
+let hamburgerMenuButton = document.getElementsByClassName("navbar-toggler")[0];
+let theNavbarHeader = document.getElementById("navbarHeader");
 
+let onHamburgerMenuButtonClick = function() {
+  theNavbarHeader.classList.toggle("collapse");
+};
 
+hamburgerMenuButton.addEventListener('click', onHamburgerMenuButtonClick);
 
 
 
