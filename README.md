@@ -18,8 +18,6 @@ Si on clique sur Hamburger Menu, l'élément HTML portant l'Id navbarHeader perd
 Fonctionnalité 2-bis :
 Si on clique à nouveau dessus, la classe collapse est rajoutée à nouveau à l'élément portant l'Id navbarHeader.
 
-Indice : Il existe une fonction qui permet de rajouter une classe si elle n'est pas déjà présente et l'enlever si elle est déjà présente. C'est "toggle". Tu peux l'utiliser ainsi : elementDuDOM.classList.toggle("nomDeLaClasse")
-
 
 
 Fonctionnalité 3 :
