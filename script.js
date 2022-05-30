@@ -63,7 +63,10 @@ secondCardEditBtn.addEventListener('click', onSecondCardEditBtnClick)
 
 //Fonctionnalité 5:
 
+let fullNavbar = document.getElementsByClassName("navbar")[0];
 
+let head = document.getElementsByTagName("head");
+console.log(head);
 
 
 
