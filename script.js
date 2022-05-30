@@ -70,19 +70,29 @@ let navbar = document.querySelector(".navbar"); // J'AI PAS BIEN COMPRIS PK, MAI
 function switchBootstrapOnDblClick() {
   if (bootstrapCDNLink.disabled) {
     bootstrapCDNLink.disabled = false
-  } else {
+  } else { // POUR RETABLIR BOOTSTRAP, IL FAUT DOUBLE CLIQUER SUR LE MINUSCULE BOUTON GRIS (À DROITE DE "JS & EVENTS")
     bootstrapCDNLink.disabled =true
   }
 }
 
 navbar.addEventListener('dblclick',switchBootstrapOnDblClick);
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// POUR RETABLIR BOOTSTRAP, IL FAUT DOUBLE CLIQUER SUR LE MINUSCULE BOUTON GRIS (À DROITE DE "JS & EVENTS")
 
-// .innerHTML
-// <title>Exercice sur les events JS</title>
 
-// ajouter bruitage "oh noes!"
+// Fonctionnalité 6 :
+let viewButtons = document.querySelectorAll('div.album div.col-md-4 div.btn-group .btn-success')
+
+viewButtons.forEach(item => {item.addEventListener('mouseenter', event => {
+  let card = item.parentElement.parentElement.parentElement.parentElement.parentElement
+  card.querySelector('.card-text').classList.toggle('collapse');
+  if (card.querySelector('.card-img-top').style.width != "20%") {
+    card.querySelector('.card-img-top').style.width = "20%";
+  } else {
+    card.querySelector('.card-img-top').style.width = "100%"
+  }
+})});
+
 
 
 
