@@ -31,7 +31,11 @@ let firstCard = document.querySelector("div.card")
 let firstCardEditBtn = firstCard.querySelector("button.btn-outline-secondary")
 console.log(firstCardEditBtn)
 
-//let buttonEditFrom1stCard = document.getElements
+let onFirstCardEditBtnClick = function() {
+  firstCard.style.color = "red";
+};
+
+firstCardEditBtn.addEventListener('click', onFirstCardEditBtnClick);
 
 
 

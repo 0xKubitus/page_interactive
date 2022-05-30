@@ -23,10 +23,6 @@ Si on clique à nouveau dessus, la classe collapse est rajoutée à nouveau à l
 Fonctionnalité 3 :
 Si on clique sur le bouton "Edit" de la première card, le texte de la card va se mettre en rouge de façon irréversible (sauf si on recharge la page). 
 
-Indice : Commence par bien pointer sur la première card en entier (stocke-la dans une variable puis affiche-la en console pour confirmer que tu l'as bien pointé).
-Puis pointe vers le bouton Edit de cette card (idem : stocke-le dans une variable et affiche-le en console).
-Une fois que ça c'est bien fait, tu peux facilement rajoute un style ="color: red" au texte de la card !
-
 
 
 Fonctionnalité 4 :
