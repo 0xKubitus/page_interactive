@@ -1,10 +1,10 @@
 //Fonctionnalité 1-bis:
 let theFooter = document.getElementsByTagName("footer")[0];
-let i = 1
+let i = 1;
 
 let onFooterClick = function() {
-  console.log("clic n°" + i)
-  i += 1
+  console.log("clic n°" + i);
+  i += 1;
 };
 
 theFooter.addEventListener('click', onFooterClick);
@@ -27,19 +27,37 @@ hamburgerMenuButton.addEventListener('click', onHamburgerMenuButtonClick);
 
 //Fonctionnalité 3:
 
-let firstCard = document.querySelector("div.card")
-let firstCardEditBtn = firstCard.querySelector("button.btn-outline-secondary")
-console.log(firstCardEditBtn)
+let firstCard = document.querySelector("div.card");
+let firstCardEditBtn = firstCard.querySelector("button.btn-outline-secondary");
 
 let onFirstCardEditBtnClick = function() {
   firstCard.style.color = "red";
 };
 
 firstCardEditBtn.addEventListener('click', onFirstCardEditBtnClick);
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 
+//Fonctionnalité 4:
 
+let secondCard = document.getElementsByClassName("card")[1];
+let secondCardEditBtn = secondCard.querySelector("button.btn-outline-secondary");
+let secondCardEditBtnStatus = false;
+
+let onSecondCardEditBtnClick = function() {
+  if (secondCardEditBtnStatus == false) {
+    secondCard.style.color = "green";
+    secondCardEditBtnStatus = true;
+  }
+  else if (secondCardEditBtnStatus == true) {
+    secondCard.style.color = "black";
+    secondCardEditBtnStatus = false;
+  }
+};
+
+secondCardEditBtn.addEventListener('click', onSecondCardEditBtnClick)
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 
