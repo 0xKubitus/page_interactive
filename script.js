@@ -61,6 +61,13 @@ secondCardEditBtn.addEventListener('click', onSecondCardEditBtnClick)
 
 
 
+//Fonctionnalité 5:
+
+
+
+
+
+
 
 
 
@@ -71,4 +78,5 @@ secondCardEditBtn.addEventListener('click', onSecondCardEditBtnClick)
 
 
 //STEP3 : // Add the event listener for the element and function.
+
 

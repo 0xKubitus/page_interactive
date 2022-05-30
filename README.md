@@ -30,12 +30,6 @@ a) Si on clique sur le bouton "Edit" de la deuxième card, le texte de la card v
 
 b) Si on re-clique dessus, il redevient comme avant !
 
-Indice : Reprend le code de la fonctionnalité 3 et adapte-le pour qu'il marche sur la 2ème card (et en remplaçant le rouge par du vert).
-Maintenant, pour le toggle, il va falloir te faire un petit if / else dans ton AddEventListener. On te donne le début :
-if (secondCard.style.color === 'green'){
-secondCard.style.color = '' ;
-}else …
-
 
 
 Fonctionnalité 5 :
