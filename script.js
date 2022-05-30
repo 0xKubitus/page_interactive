@@ -56,19 +56,33 @@ let onSecondCardEditBtnClick = function() {
   }
 };
 
-secondCardEditBtn.addEventListener('click', onSecondCardEditBtnClick)
+secondCardEditBtn.addEventListener('click', onSecondCardEditBtnClick);
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 
 //Fonctionnalité 5:
 
-let fullNavbar = document.getElementsByClassName("navbar")[0];
+let bootstrapCDNLink = document.getElementsByTagName('link')[0];
+console.log("voici le 1er 'link' pour vérifier :" + bootstrapCDNLink)
+let navbar = document.querySelector(".navbar"); // J'AI PAS BIEN COMPRIS PK, MAIS IL FAUT UN POINT ! (ON APPELLE LA CLASSE CSS ET PAS LA CLASSE HTML ? JE CROYAIS QUE CETAIT LA MEME CHOSE ?)
 
-let head = document.getElementsByTagName("head");
-console.log(head);
+function switchBootstrapOnDblClick() {
+  if (bootstrapCDNLink.disabled) {
+    bootstrapCDNLink.disabled = false
+  } else {
+    bootstrapCDNLink.disabled =true
+  }
+}
 
+navbar.addEventListener('dblclick',switchBootstrapOnDblClick);
 
+// POUR RETABLIR BOOTSTRAP, IL FAUT DOUBLE CLIQUER SUR LE MINUSCULE BOUTON GRIS (À DROITE DE "JS & EVENTS")
+
+// .innerHTML
+// <title>Exercice sur les events JS</title>
+
+// ajouter bruitage "oh noes!"
 
 
 
