@@ -84,7 +84,7 @@ navbar.addEventListener('dblclick',switchBootstrapOnDblClick);
 let viewButtons = document.querySelectorAll('div.album div.col-md-4 div.btn-group .btn-success')
 
 viewButtons.forEach(item => {item.addEventListener('mouseenter', event => {
-  let card = item.parentElement.parentElement.parentElement.parentElement.parentElement
+  let card = item.parentElement.parentElement.parentElement.parentElement.parentElement // je sais pas s'il existe une methode qui permet de choper le 'parentElement' de chaque 'viewButton' (un genre de .all)
   card.querySelector('.card-text').classList.toggle('collapse');
   if (card.querySelector('.card-img-top').style.width != "20%") {
     card.querySelector('.card-img-top').style.width = "20%";
@@ -92,18 +92,37 @@ viewButtons.forEach(item => {item.addEventListener('mouseenter', event => {
     card.querySelector('.card-img-top').style.width = "100%"
   }
 })});
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 
+// Fonctionnalité 7 :
+let TopRightBtn = document.querySelector('a.btn-secondary');
+
+function rotate() {
+  let firstCard = document.querySelector('div.album div.row').firstElementChild;
+  let lastCard = document.querySelector('div.album div.row').lastElementChild;
+  lastCard.remove();
+  firstCard.parentNode.insertBefore(lastCard,firstCard);
+}
+
+TopRightBtn.addEventListener('click',rotate);
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 
-//STEP1 : // Find and store the element we want to listen to events on. 
+// Fonctionnalité 8 :
+var TopLeftBtn = document.querySelector('.btn-primary');
+var parent = document.querySelector('.album .row');
+
+TopLeftBtn.removeAttribute('href');
+
+TopLeftBtn.addEventListener('click', function(e){
+    e.preventDefault();
+    parent.insertBefore(parent.firstElementChild, parent.lastElementChild.nextSibling);
+});
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
-//STEP2 : // Define the function that will respond to the event. 
 
-
-//STEP3 : // Add the event listener for the element and function.
-
-
+// Fonctionnalité 9 :
